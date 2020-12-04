@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmotionDetection.EmotionDetection" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame BackgroundColor="#2E5B9A" >
+                    <Label FontSize="30" FontAttributes="Bold" FontFamily="Medium Bold Font" TextColor="White" HorizontalOptions="Center" Margin="5,20,0,20">
+                        Detect Emotion
+                    </Label>
+                </Frame>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                </Grid>
+
+                <Image Margin="0,20,0,20" Grid.Row="0" x:Name="PhotoImage" Source="XamCam" HeightRequest="200"/>
+                <Button BackgroundColor="#2E5B9A" x:Name="CameraButton" Text="Take New Picture" FontAttributes="Bold" WidthRequest="250" Clicked="CameraButton_Clicked" Grid.Row="1" HorizontalOptions="Center" TextColor="White" FontFamily="Times New Roman"/>
+                <Label FontAttributes="Bold" FontFamily="Medium Bold Font" FontSize="16"  x:Name="LblResult" HorizontalOptions="Center" TextColor="Black"></Label>
+                <ActivityIndicator Color="#2E5B9A" x:Name="ca"></ActivityIndicator>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

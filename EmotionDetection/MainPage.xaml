@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmotionDetection.MainPage" BackgroundImageSource="Back"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" NavigationPage.HasNavigationBar="False">
+
+    <yummy:PancakeView
+                Margin="0,30,0,0"
+                Padding="30,0,30,30"
+                
+                CornerRadius="40,40,0,0"
+                VerticalOptions="FillAndExpand">
+      
+        <StackLayout>
+            <Label
+                        Margin="20"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Text="Choose your emotion"
+                        TextColor="#791AE5"
+                        VerticalOptions="Center" />
+            <Grid Margin="5" ColumnSpacing="20" RowSpacing="30">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="230" />
+                    <RowDefinition Height="230" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <yummy:PancakeView
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Padding="10"
+                            BackgroundColor="White"
+                            BorderThickness="1"
+                            CornerRadius="15"
+                            Elevation="3">
+                    <yummy:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
+                        </TapGestureRecognizer>
+                    </yummy:PancakeView.GestureRecognizers>
+                    <StackLayout>
+                        <Image Source="im1.png" />
+                        <Label
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    HorizontalOptions="CenterAndExpand"
+                                    HorizontalTextAlignment="Center"
+                                    Text="Sad"
+                                    TextColor="Black"
+                                    VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </yummy:PancakeView>
+                <yummy:PancakeView
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Padding="10"
+                            BackgroundColor="White"
+                            BorderThickness="1"
+                            CornerRadius="15"
+                            Elevation="3">
+                    <yummy:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1">
+                        </TapGestureRecognizer>
+                    </yummy:PancakeView.GestureRecognizers>
+                    <StackLayout>
+                        <Image Source="im2.png" />
+                        <Label
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    HorizontalOptions="CenterAndExpand"
+                                    HorizontalTextAlignment="Center"
+                                    Text="Disgust"
+                                    TextColor="Black"
+                                    VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </yummy:PancakeView>
+                <yummy:PancakeView
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Padding="10"
+                            BackgroundColor="White"
+                            BorderThickness="1"
+                            CornerRadius="15"
+                            Elevation="3">
+                    <yummy:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2">
+                        </TapGestureRecognizer>
+                    </yummy:PancakeView.GestureRecognizers>
+                    <StackLayout>
+                        <Image Source="im3.png" />
+                        <Label
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    HorizontalOptions="CenterAndExpand"
+                                    HorizontalTextAlignment="Center"
+                                    Text="Happy"
+                                    TextColor="Black"
+                                    VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </yummy:PancakeView>
+                <yummy:PancakeView
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Padding="10"
+                            BackgroundColor="White"
+                            BorderThickness="1"
+                            CornerRadius="15"
+                            Elevation="3">
+                    <yummy:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3">
+                        </TapGestureRecognizer>
+                    </yummy:PancakeView.GestureRecognizers>
+                    <StackLayout>
+                        <Image Source="im4.png" />
+                        <Label
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    HorizontalOptions="CenterAndExpand"
+                                    HorizontalTextAlignment="Center"
+                                    Text="Neutral"
+                                    TextColor="Black"
+                                    VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </yummy:PancakeView>
+            </Grid>
+        </StackLayout>
+    </yummy:PancakeView>
+</ContentPage>

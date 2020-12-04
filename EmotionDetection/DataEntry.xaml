@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmotionDetection.DataEntry">
+    <ContentPage.Content>
+        <StackLayout  VerticalOptions="Center">
+            <Image Source="add" HeightRequest="200" HorizontalOptions="Center"/>
+
+            <Entry Placeholder="Movie Name" x:Name="Name" ></Entry>
+            <Entry Placeholder="Add Video Link" x:Name="url"></Entry>
+            <Picker Title="Choose Category" x:Name="Cat" >
+                <Picker.Items>
+                    <x:String>Happiness</x:String>
+                    <x:String>Sadness</x:String>
+                    <x:String>Disgust</x:String>
+                    <x:String>Neutral</x:String>
+                </Picker.Items>
+            </Picker>
+            <Entry Placeholder="Description" x:Name="description"></Entry>
+            <Button Text="Add Data" x:Name="Post" Clicked="Post_Clicked"  BackgroundColor="#2E5B9A" TextColor="White" CornerRadius="40"></Button>
+            <Button Text="LogOut" x:Name="Logout" Clicked="Logout_Clicked" BackgroundColor="#2E5B9A" TextColor="White" CornerRadius="40"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

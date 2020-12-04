@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmotionDetection.CategoryMovie">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.8*"/>
+                <RowDefinition Height="0.2*"/>
+            </Grid.RowDefinitions>
+            
+        
+        <ListView x:Name="LvMovies" HasUnevenRows="True" SeparatorVisibility="None" Grid.Row="0">
+            <ListView.ItemTemplate>
+
+                <DataTemplate>
+
+                    <ViewCell>
+                        <StackLayout>
+
+                            <WebView HeightRequest="200" WidthRequest="200" Source="{Binding EmbeddedVedio}"></WebView>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.4*"></ColumnDefinition>
+                                    <ColumnDefinition Width="0.6*"></ColumnDefinition>
+
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="0.25*"></RowDefinition>
+                                    <RowDefinition Height="0.25*"></RowDefinition>
+                                    <RowDefinition Height="0.25*"></RowDefinition>
+                                    <RowDefinition Height="0.25*"></RowDefinition>
+
+
+                                </Grid.RowDefinitions>
+                                <Label Text="Movie Name" FontAttributes="Bold" FontSize="Medium" Grid.Row="0" Grid.Column="0"></Label>
+                                <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="1" FontSize="Medium" TextColor="#1565c0"></Label>
+                                <Label Text="Categories" FontAttributes="Bold" FontSize="Medium" Grid.Row="1" Grid.Column="0"></Label>
+
+                                <Label Text="{Binding Category}" Grid.Row="1" Grid.Column="1" FontSize="Medium" TextColor="#1565c0"></Label>
+                                <Label Text="Upload Date" FontAttributes="Bold" FontSize="Medium" Grid.Row="2" Grid.Column="0"></Label>
+
+                                <Label Text="{Binding Date}" Grid.Row="2" Grid.Column="1" FontSize="Medium" TextColor="#1565c0"></Label>
+                                <Label Text="DESCRIPTION" FontAttributes="Bold" FontSize="Medium" Grid.Row="3" Grid.Column="0"></Label>
+
+                                <Label Text="{Binding Description}" Grid.Row="3" Grid.Column="1" FontSize="Medium" TextColor="#1565c0"></Label>
+
+
+                            </Grid>
+                        </StackLayout>
+
+                    </ViewCell>
+
+
+
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+            <Image Grid.Row="1" Source="Movie.png"></Image>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

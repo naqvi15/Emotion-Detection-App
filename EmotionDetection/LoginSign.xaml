@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmotionDetection.LoginSign" NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="G1.png"></Image>
+           
+            <AbsoluteLayout Margin="40,-150">
+                <StackLayout>
+                    <Button Text="SIGN IN" x:Name="signin" Clicked="signin_Clicked" CornerRadius="21" WidthRequest="300" BackgroundColor="#2E5B9A" FontFamily="Segoe UI" TextColor="White" FontSize="Large" FontAttributes="Bold" ></Button>
+                    <Button Text="SIGN UP" x:Name="signup" Clicked="signup_Clicked" CornerRadius="21" WidthRequest="300" BackgroundColor="#75A1DE" FontFamily="Segoe UI" TextColor="White" FontSize="Large" FontAttributes="Bold"></Button>
+                </StackLayout>
+            </AbsoluteLayout>
+            <AbsoluteLayout Margin="40,-240">
+                <Image Source="EM"></Image>
+            </AbsoluteLayout>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

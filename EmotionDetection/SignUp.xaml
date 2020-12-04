@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmotionDetection.SignUp" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Image HorizontalOptions="Center" Source="SIGNUPHeading"  Margin="20"></Image>
+            <Image Source="signup.png"></Image>
+
+            <Frame Margin="20" BackgroundColor="Transparent" BorderColor="#2E5B9A" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                <StackLayout Orientation="Horizontal">
+                    <Frame BackgroundColor="Transparent"  HeightRequest="20" WidthRequest="20"  Padding="0" Margin="10">
+                        <Image Source="emailing"  HeightRequest="100" WidthRequest="0.5" Margin="0"/>
+                    </Frame>
+                    <Entry Placeholder="Email" x:Name="em" PlaceholderColor="#2E5B9A" TextColor="#2E5B9A" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                </StackLayout>
+            </Frame>
+            <Frame Margin="20,0" BackgroundColor="Transparent" BorderColor="#2E5B9A" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                <StackLayout Orientation="Horizontal">
+                    <Frame BackgroundColor="Transparent"   HeightRequest="20" WidthRequest="20"  Padding="0" Margin="10">
+                        <Image Source="pass"  HeightRequest="100" WidthRequest="0.5" Margin="0"/>
+                    </Frame>
+                    <Entry IsPassword="True" Placeholder="Password" PlaceholderColor="#2E5B9A" x:Name="Pass" TextColor="#2E5B9A" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                </StackLayout>
+            </Frame>
+            <Frame Margin="20,20" BackgroundColor="Transparent" BorderColor="#2E5B9A" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                <StackLayout Orientation="Horizontal">
+                    <Frame BackgroundColor="Transparent"  HeightRequest="20" WidthRequest="20"  Padding="0" Margin="10">
+                        <Image Source="email"  HeightRequest="20" WidthRequest="0.5" Margin="0"/>
+                    </Frame>
+                    <Entry Placeholder="User Name" x:Name="Cn" TextColor="#2E5B9A" PlaceholderColor="#2E5B9A" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                </StackLayout>
+            </Frame>
+            <Button Margin="20,0" Text="SIGN UP" x:Name="createaccound" Clicked="createaccound_Clicked" CornerRadius="21" WidthRequest="300" BackgroundColor="#2E5B9A" FontFamily="Segoe UI" TextColor="White" FontSize="Large" FontAttributes="Bold"></Button>
+            <ActivityIndicator Color="#2E5B9A" x:Name="ca"></ActivityIndicator>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

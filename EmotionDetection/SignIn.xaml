@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmotionDetection.SignIn" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Image HorizontalOptions="Center" Source="signheading"  Margin="20"></Image>
+            <Image Source="signin.png"></Image>
+
+            <Frame Margin="20,50,20,10" BackgroundColor="Transparent" BorderColor="#2E5B9A" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                <StackLayout Orientation="Horizontal">
+                    <Frame BackgroundColor="Transparent" HeightRequest="20" WidthRequest="20" CornerRadius="30" Padding="0" Margin="10">
+                        <Image Source="emailing"  HeightRequest="20" WidthRequest="0.5" Margin="0"/>
+                    </Frame>
+                    <Entry Placeholder="Enter your UserName" PlaceholderColor="#2E5B9A" x:Name="un" TextColor="#2E5B9A" HorizontalOptions="FillAndExpand" Margin="0,0,10,0"/>
+                </StackLayout>
+            </Frame>
+            <Frame Margin="20,0" BackgroundColor="Transparent" BorderColor="#2E5B9A" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                <StackLayout Orientation="Horizontal">
+                    <Frame BackgroundColor="Transparent"  HeightRequest="30" WidthRequest="20" CornerRadius="30" Padding="0" Margin="10">
+                        <Image Source="pass"  HeightRequest="10" WidthRequest="0.5" Margin="0"/>
+                    </Frame>
+                    <Entry IsPassword="true" Placeholder="Password" PlaceholderColor="#2E5B9A" x:Name="Pass" TextColor="#2E5B9A" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                </StackLayout>
+            </Frame>
+            <Button Margin="20,20" Text="SIGN IN" x:Name="SignIng" Clicked="SignIng_Clicked" CornerRadius="21" WidthRequest="300" BackgroundColor="#2E5B9A" FontFamily="Segoe UI" TextColor="White" FontSize="Large" FontAttributes="Bold"></Button>
+            <ActivityIndicator x:Name="ac" Color="#2E5B9A"></ActivityIndicator>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "gKcmBdkJOSAwcHhMLw+V2zR/6G2e2XLDgyhF8YEgn+q4sKnLHTTHdo6vMvcjj8YW3Y5OmRVTMsT+DiOihseSKQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\RASAM\\source\\repos\\EmotionDetection\\EmotionDetection.iOS\\EmotionDetection.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RASAM\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\RASAM\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\RASAM\\.nuget\\packages\\torutek.microsoft.projectoxford.face\\1.2.0\\torutek.microsoft.projectoxford.face.1.2.0.nupkg.sha512",
+    "C:\\Users\\RASAM\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512",
+    "C:\\Users\\RASAM\\.nuget\\packages\\xamarin.forms.pancakeview\\2.1.0.714\\xamarin.forms.pancakeview.2.1.0.714.nupkg.sha512"
+  ],
+  "logs": []
+}
